@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.json({ message: 'Hello, Artiset - Mahindra GCO' });
 });
 
+app.get('/about', (req, res) => {
+    res.json({ message: 'This is about page' });
+  });
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
